@@ -1,0 +1,340 @@
+@import "normalize.styl"
+@import "style.styl"
+@import "nib"
+@import "nib/vendor"
+
+
+vendor-prefixes = o ms moz webkit official
+azul = #3f90dc
+rojo = rgb(230, 69, 42)
+verde = #149152
+amarillo = #FF8E1B
+negro = #686868;
+blanco= #fff;
+.align-center
+	text-align center
+.blanco
+	color blanco
+.azul
+	color azul
+.titulo
+	font-size 1.6em
+	font-weight 300
+.titulo-21
+	font-size 1.5em
+	font-weight bold
+	text-shadow: 1px 1px 2px #000;
+.frase-1
+	font-size 2em
+	font-weight bold
+	text-shadow: 1px 1px 5px rgba(0, 0, 0, 1);
+
+	
+.body
+	font-size 16px	
+
+/* Cabecera */
+
+.header-principal
+	color blanco
+	width 100%
+	height 80px
+	text-align center
+	.header-wrap
+		display: inline-block;
+		position: relative;
+		overflow: hidden;
+		width: 1010px;
+		height: 75px;
+		overflow: hidden;
+		.logo
+			position absolute
+			left 0
+			display inline-block
+			padding: 1em 0 0 1em;
+			img
+				width 120px
+		.menu
+			position: absolute;
+			text-align: right;
+			display: inline-block;
+			right: 0;
+			padding: 1em 1em 0 0;
+			ul
+				list-style: none;
+				margin: 0;
+				padding: 0;
+				li
+					display: inline-block;
+					margin: 0;
+					a
+						font-size: .9em;
+						color: blanco
+						display: block;
+						margin: 0.5em 1em;
+						text-decoration: none;
+						transition: 0.3s;
+						font-weight: bold;
+						text-transform: uppercase;
+						padding: 5px 0;
+						:hover
+							cursor pointer
+			.current-link
+				border-bottom: 2px solid azul;
+				opacity: .9;
+			.blog
+				border-bottom: 2px solid #FF9200;
+				opacity: .9;
+				
+				
+.contenedor-video
+	width 100%
+	height auto
+	position: absolute;
+	top: 0;
+	z-index: -1;
+	.video-cabecera
+		width 100%
+		height 100%
+	.pelicula
+		width: 100%;
+		height: 100%;
+		position: absolute;
+		top: 0;
+		background: rgba(4, 4, 4, 0.15);
+/*SOLAPA CONTRAPUESTA*/
+.contenedor
+	margin-right: auto;
+	margin-left: auto;
+.contenedor-solapa
+	position: relative;
+	padding: 11px 50px;
+	background: #fff;
+	border-radius: 3px;
+	box-shadow: 0 -12px 30px 0 rgba(50,50,50,0.5)
+	width: 980px;
+	top: 498px;
+	text-align: center;
+	z-index 1
+	
+/*Producto first*/
+.producto-titulo
+	color azul
+
+.producto
+	display inline-block
+	width: 450px;
+	border-right: 1px solid azul;
+	border-left: 1px solid azul;
+	border-top 1px solid azul;
+	border-radius: 6px 6px 6px 6px;
+	cursor pointer
+	transition: all 300ms ease-in-out;
+	&:hover .boton-comprar
+		background #EC1818
+	&:hover
+		box-shadow 1px 5px 15px negro
+	
+	
+		
+		
+	figure
+		margin 0
+		padding 0
+		display inline-block
+		float right
+		img
+			width: 225px;
+			left: 0;
+			position: relative;
+	.producto-descripcion
+		width: 210px;
+		text-align: justify;
+		/* line-height: 12px; */
+		/* letter-spacing: 0px; */
+		word-spacing: 0px;
+		white-space: normal;
+		display inline-block
+		.beneficios
+			
+			ul
+				padding: 0 0 0 1em;
+				li
+					list-style none
+				h4
+					margin 0
+		a
+			color azul
+			text-decoration none
+	.producto-cabecera
+		/* background: #3f90dc; */
+		color blanco
+		background azul
+		padding: 1em 0 1em 0;
+		text-align: center;
+		margin: 0;
+		-webkit-border-radius: 3px 3px 0 0;
+		-webkit-border-radius: 3px 3px 0 0;
+		border-radius: 3px 3px 0 0;
+		margin-bottom: 1em;
+		border-bottom: 1px solid #3f90dc;
+		font-weight: 300;
+		font-size: 1.4em;
+		transition: all 300ms ease-in-out;
+	.boton-comprar
+		background rojo
+		color blanco
+		text-shadow: 0 -1px 0 rgba(0,0,0,0.25);
+		/* background-color: #ff241b; */
+		border: none;
+		padding: 9px 40px;
+		font-size: 1.5em;
+		-webkit-border-radius: 4px;
+		-moz-border-radius: 4px;
+		-webkit-border-radius: 4px;
+		border-radius: 4px;
+		line-height: normal;
+		-o-transition: all 300ms ease-in-out;
+		-ms-transition: all 300ms ease-in-out;
+		-moz-transition: all 300ms ease-in-out;
+		-webkit-transition: all 300ms ease-in-out;
+		transition: all 300ms ease-in-out;
+		display: inline-block;
+		float: right;
+		width: 100%;
+		
+		border: 1px solid rojo;
+		
+		
+		
+	.precio
+		font-weight: 300;
+		font-size: 2em;
+		color: negro;
+		border-top: 1px solid #3f90dc;
+	.precio-antes
+		text-decoration: line-through;
+	.antes
+		margin 0
+		color azul
+	.price-icon
+		color: rojo;
+		left: -10px;
+		position: relative;
+		font-size: 0.8em;
+	.check
+		color verde
+		margin-right: 0.5em;
+/* Contenedor Principal */
+.contenedor-principal
+	width: 100%;
+	height: 800px;
+	background: #fff;
+	top: 10px;
+	position: relative;
+	padding-top: 30em;
+	text-align: center;
+	.seccion-natural
+		background url("../img/rdu21-ingredientes-naturales.jpg")
+		background-repeat: no-repeat
+		background-position: center center
+		background-size 100% 100%
+		width 100%
+		height: 780px;
+		position: relative;
+		text-align center
+		&:before
+			content ""
+			width: 100%;
+			height: 100%;
+			position: absolute;
+			top: 0;
+			left 0
+			background: rgba(4, 4, 4, 0.15);
+		.descripcion
+			position relative
+			top 200px
+			h2
+				font-size 2.5em
+				color blanco
+			p
+				color blanco
+			.boton-estudios
+				background azul
+				color blanco
+				text-shadow: 0 -1px 0 rgba(0,0,0,0.25);
+				/* background-color: #ff241b; */
+				border: none;
+				padding: 9px 40px;
+				font-size: 1.5em;
+				-webkit-border-radius: 4px;
+				-moz-border-radius: 4px;
+				-webkit-border-radius: 4px;
+				border-radius: 4px;
+				line-height: normal;
+				-o-transition: all 300ms ease-in-out;
+				-ms-transition: all 300ms ease-in-out;
+				-moz-transition: all 300ms ease-in-out;
+				-webkit-transition: all 300ms ease-in-out;
+				transition: all 300ms ease-in-out;
+				display: inline-block;
+				width: 300px;
+				border: 1px solid azul;
+				cursor pointer
+					
+
+
+	
+		
+@media screen and (max-width:1097px)
+	.contenedor-solapa
+		width: 100%;
+		border none
+		box-shadow none
+		padding 0
+		top 308px
+		padding-top: 1em;
+	.header-principal .header-wrap
+		width 100%
+		
+		
+@media screen and (max-width:900px)
+	.contenedor-video
+		background url("../img/rdu21-reduce-medidas-2.jpg");
+		background-repeat: no-repeat
+		background-position: 30% 20%; 
+		background-size 100% 100%
+		width 100%
+		height: 780px;
+		position: absolute;
+		text-align center
+		
+		video
+			display none
+@media screen and (max-width:660px)
+	.menu
+		display none !important
+	.contenedor-video
+		height 476px
+	.contenedor-principal
+		padding-top 11em
+	.contenedor-solapa
+		top 200px
+				
+		
+@media screen and (max-width:400px)
+	.lel
+		background none
+		
+	
+
+		
+			
+			
+
+		
+		
+		
+			
+	
+
