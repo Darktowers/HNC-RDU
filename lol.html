@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="utf-8">
+    <title>Swiper demo</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1, minimum-scale=1, maximum-scale=1">
+<!-- Important Owl stylesheet -->
+<link rel="stylesheet" href="css/owl.carousel.css">
+ 
+<!-- Default Theme -->
+<link rel="stylesheet" href="css/owl.theme.css">
+ 
+
+   
+</head>
+<body>
+    <div id="owl-example" class="owl-carousel">
+          <div>    Reducir grasa localizada </div>
+          <div> Tener eficacia cosmética </div>
+          <div>   Beneficiarte de Rdu21 </div>
+          <div> Verte mucho mejor </div>
+    </div>
+  
+<!--  jQuery 1.7+  -->
+    <script src="js/vendor/jquery-1.9.1.min.js"></script>
+     
+    <!-- Include js plugin -->
+    <script src="js/owl.carousel.js"></script>
+    <script>
+        $(document).ready(function() {
+ 
+          $("#owl-example").owlCarousel({
+                autoPlay: 3000, //Set AutoPlay to 3 seconds
+ 
+              items : 1,
+              itemsDesktop : [1199,3],
+              itemsDesktopSmall : [979,3],
+              navigation : false,
+              pagination : false
+          });
+
+         
+        });
+    </script>
+</body>
+
+</html>

@@ -234,37 +234,39 @@ blanco= #fff;
 	position: relative;
 	padding-top: 30em;
 	text-align: center;
+	border-top: 6px solid azul;
 	.seccion-natural
-		background url("../img/rdu21-ingredientes-naturales.jpg")
+		background url("../img/background-rdu21.jpg")
 		background-repeat: no-repeat
 		background-position: center center
-		background-size 100% 100%
 		width 100%
-		height: 780px;
 		position: relative;
 		text-align center
-		&:before
+		background-size: cover;
+		/*&:before
 			content ""
 			width: 100%;
 			height: 100%;
 			position: absolute;
 			top: 0;
 			left 0
-			background: rgba(4, 4, 4, 0.15);
+			background: rgba(4, 4, 4, 0.15);*/
 		.descripcion
 			position relative
-			top 200px
+			padding 2em 0 
 			h2
 				font-size 2.5em
 				color blanco
+				margin 0
 			p
 				color blanco
 			.boton-estudios
-				background azul
+				background none
 				color blanco
+				border 2px solid blanco
 				text-shadow: 0 -1px 0 rgba(0,0,0,0.25);
 				/* background-color: #ff241b; */
-				border: none;
+				
 				padding: 9px 40px;
 				font-size: 1.5em;
 				-webkit-border-radius: 4px;
@@ -279,8 +281,13 @@ blanco= #fff;
 				transition: all 300ms ease-in-out;
 				display: inline-block;
 				width: 300px;
-				border: 1px solid azul;
+				
 				cursor pointer
+				&:hover
+					background blanco
+					color azul
+					border: 2px solid azul;
+					
 					
 
 

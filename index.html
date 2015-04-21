@@ -12,6 +12,11 @@
         <meta name="viewport" content="width=device-width, initial-scale=1">
         <link rel="stylesheet" href="css/main.css">
         <link href='http://fonts.googleapis.com/css?family=Lato:100italic,100,300italic,300,400,700,400italic' rel='stylesheet' type='text/css'> 
+        <!-- Important Owl stylesheet -->
+        <link rel="stylesheet" href="css/owl.carousel.css">
+         
+        <!-- Default Theme -->
+        <link rel="stylesheet" href="css/owl.theme.css">
     </head>
     <body>
     <header class="header-principal">
@@ -32,7 +37,15 @@
     </header>
     <h1 class="blanco align-center titulo">
         <span class="titulo">Estás a <br> <span class="azul titulo-21">21 días</span> de </span><br>
-        <span class="frases frase-1">Lucir tu cintura</span></h1>
+        <div id="owl-example" class="owl-carousel">
+              <div class="frases frase-1">    Reducir grasa localizada </div>
+              <div class="frases frase-1"> Tener eficacia cosmética </div>
+              <div class="frases frase-1">   Beneficiarte de Rdu21 </div>
+              <div class="frases frase-1"> Verte mucho mejor </div>
+              <div class="frases frase-1"> Lucir tu cintura </div>
+        </div>
+    </h1>
+        
     <div class="contenedor-video">
         <video class="video-cabecera" preload="" width="1024" height="768" loop autoplay muted> 
             <source src="media/video-rdu21.mp4" type="video/mp4">
@@ -109,6 +122,33 @@
         </section>
     </div>
     <!--- Script ZONE -->
+   
     <script src="js/main.js"></script>
+    <!--  jQuery 1.7+  -->
+    <script src="js/vendor/jquery-1.9.1.min.js"></script>
+     
+    <!-- Include js plugin -->
+    <script src="js/owl.carousel.js"></script>
+    <script>
+        $(document).ready(function() {
+ 
+          $("#owl-example").owlCarousel({
+            autoplay:true,
+            autoplayTimeout:3000,
+            items : 1,
+            loop:true,
+            center:true,
+            dots:false,
+            itemsDesktop : [1199,1],
+            itemsDesktopSmall : [979,1],
+            itemsTablet: [600,1], //2 items between 600 and 0
+            navigation : false,
+            pagination : false,
+            slideSpeed : 1200
+          });
+
+         
+        });
+    </script>
     </body>
 </html>
