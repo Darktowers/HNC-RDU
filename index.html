@@ -18,6 +18,7 @@
         <!-- Default Theme -->
         <link rel="stylesheet" href="css/owl.theme.css">
     </head>
+
     <body>
     <header class="header-principal">
         <div class="header-wrap">
@@ -38,7 +39,7 @@
     <div class="contenedor-mensaje">
         <h1 class="blanco align-center titulo">
         <span class="titulo">Estás a <br> <span class="azul titulo-21">21 días</span> de </span><br>
-            <div id="owl-example" class="owl-carousel">
+            <div id="owl-example-1" class="owl-carousel">
                   <div class="frases frase-1">    Reducir grasa localizada </div>
                   <div class="frases frase-1"> Tener eficacia cosmética </div>
                   <div class="frases frase-1">   Beneficiarte de Rdu21 </div>
@@ -61,19 +62,8 @@
         <article class="producto">
             <h3 class="producto-cabecera">Parche Vientre plano</h3>
             <div class="producto-descripcion">
-                 <nav class="beneficios">
-                     <ul>
-                         <strong><p>Beneficios</p></strong>
-                         <li><span class="icon-checkmark check"></span>Ingredientes naturales</li>
-                         <li><span class="icon-checkmark check"></span>Reduce grasa localizada</li>
-                         <li><span class="icon-checkmark check"></span>Vientre mas firme</li>
-                         <li><span class="icon-checkmark check"></span>Innovadora tecnologia</li>
-                         <li><span class="icon-checkmark check"></span>Estudios clinicos</li>
                 
-                         
-                     </ul>
-                 </nav>
-                <br>
+               
                 <figure>
                     <img src="img/parche-vientre-plano-rdu21.png" alt="parche-vientre-plano-rdu21">
                 </figure>
@@ -87,18 +77,7 @@
         <article class="producto">
             <h3 class="producto-cabecera">Parche Anticelulitico</h3>
             <div class="producto-descripcion">
-                 <nav class="beneficios">
-                     <ul>
-                        <strong><p>Beneficios</p></strong>
-                        <li><span class="icon-checkmark check"></span>Ingredientes naturales</li>
-                        <li><span class="icon-checkmark check"></span>Reduce grasa localizada</li>
-                        <li><span class="icon-checkmark check"></span>Vientre mas firme</li>
-                        <li><span class="icon-checkmark check"></span>Innovadora tecnologia</li>
-                        <li><span class="icon-checkmark check"></span>Estudios clinicos</li>
-
-                    </ul>
-                 </nav>
-                <br>
+              
                 <figure>
                     <img src="img/parche-anticelulitico-rdu21.png" alt="parche-anticelulitico-rdu21">
                 </figure>
@@ -110,6 +89,8 @@
             <div class="precio-antes">75.000</div>
             <button class="boton-comprar">Comprar ahora</button>
         </article>
+
+        <button class="boton-estudios naranja">Ver Catalogo</button> 
     </div>
 
     <div class="contenedor-principal">
@@ -156,7 +137,67 @@ left: 1px;"></h2>
          <div class="img-playa" data-parallax="scroll" data-bleed="10" data-natural-width="1400" data-natural-height="900" data-z-index="500" data-image-src="./img/rdu21-reduce-medidas-baila.jpg" >
             
         </div>
+        <section class="seccion-testimonios">
+            <div class="descripcion">
+                <h2>Testimonios <img src="img/logo-rdu21.png" alt="logo-rdu21" style="width: 128px;
+position: relative;
+top: 12px;
+left: 1px;"></h2>
+                <p style="font-size: 1.5em;">Nuestros casos de exito</p>
+                <div id="owl-example-2" >
+                  <div class="testimonio">
+                    <h3 class="nombre"><strong>Ana Maria</strong></h3>
+                      <article class="testimonio-item">
+                          <figure>
+                            <img src="img/ana-maria.jpg" alt="Ana maria">
+                        </figure>
+                        
+                        <div class="profesion"> <p class="profesion-item"><small>(Ama de casa)</small></p></div>
+                        <div class="description">
+                            <p>
+                            Lorem ipsum dolor sit amet, consectetur adipisicing elit. Dicta reprehenderit, nisi similique deserunt asperiores error temporibus. Recusandae at nisi, nemo, amet sit delectus modi quam. Dolorum possimus magni id illum.
+                            </p>
+                        </div>
+                      </article>
+                  </div>
+                <div class="testimonio">
+                    <h3 class="nombre"><strong>Ana Maria</strong></h3>
+                      <article class="testimonio-item">
+                          <figure>
+                            <img src="img/ana-maria.jpg" alt="Ana maria">
+                        </figure>
+                        
+                        <div class="profesion"> <p class="profesion-item"><small>(Ama de casa)</small></p></div>
+                        <div class="description">
+                            <p>
+                            Lorem ipsum dolor sit amet, consectetur adipisicing elit. Dicta reprehenderit, nisi similique deserunt asperiores error temporibus. Recusandae at nisi, nemo, amet sit delectus modi quam. Dolorum possimus magni id illum.
+                            </p>
+                        </div>
+                      </article>
+                </div>
+                <div class="testimonio">
+                        <h3 class="nombre"><strong>Ana Maria</strong></h3>
+                      <article class="testimonio-item">
+                          <figure>
+                            <img src="img/ana-maria.jpg" alt="Ana maria">
+                        </figure>
+                        <div class="description">
+                           
+                            <div class="profesion"> <p class="profesion-item"><small>(Ama de casa)</small></p></div>
+                        
+                            <p>
+                            Lorem ipsum dolor sit amet, consectetur adipisicing elit. Dicta reprehenderit, nisi similique deserunt asperiores error temporibus. Recusandae at nisi, nemo, amet sit delectus modi quam. Dolorum possimus magni id illum.
+                            </p>
+                        </div>
+                      </article>
+                  </div>
 
+                </div>
+            </div>
+        </section>
+        <section>
+            
+        </section>
     <!--- Script ZONE -->
    
     
@@ -170,11 +211,12 @@ left: 1px;"></h2>
     <script>
         $(document).ready(function() {
  
-          $("#owl-example").owlCarousel({
+          $("#owl-example-1").owlCarousel({
             autoplay:true,
             autoplayTimeout:3000,
             items : 1,
             loop:true,
+            nav: false,
             center:true,
             dots:false,
             itemsDesktop : [1199,1],
@@ -183,6 +225,22 @@ left: 1px;"></h2>
             navigation : false,
             pagination : false,
             slideSpeed : 2200
+          });
+        $("#owl-example-2").owlCarousel({
+            autoplay:true,
+            items : 1,
+            autoplayTimeout:3000,
+            loop:true,
+            nav: false,
+            center:true,
+            dots:false,
+            itemsDesktop : [1199,2],
+            itemsDesktopSmall : [979,1],
+            itemsTablet: [600,1], //2 items between 600 and 0
+            navigation : false,
+            pagination : false,
+            slideSpeed : 50000,
+        
           });
 
          
