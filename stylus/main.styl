@@ -40,8 +40,8 @@ blanco= #fff;
 /* Cabecera */
 .boton-estudios
 		background none
-		color azul
-		border 2px solid azul
+		color rojo
+		border 2px solid rojo
 		text-shadow: 0 -1px 0 rgba(0,0,0,0.25);
 		/* background-color: #ff241b; */
 		
@@ -59,12 +59,11 @@ blanco= #fff;
 		transition: all 300ms ease-in-out;
 		display: inline-block;
 		width: 300px;
-		
 		cursor pointer
 		&:hover
-			background azul
+			background rojo
 			color blanco
-			border: 2px solid azul;
+			border: 2px solid rojo;
 .contenedor-mensaje
 	text-align center
 	
@@ -200,7 +199,25 @@ blanco= #fff;
 		background #FFA447
 	&:hover
 		box-shadow 1px 5px 15px negro
-	
+	p
+		color azul
+	.producto-beneficios
+		list-style none
+		display block
+		text-align center
+		li
+			display inline-block
+			position: relative;
+			width: 235px;
+			height: 34px;
+			img
+				display inline-block
+				width 50px
+				float left
+			p
+				color azul
+				margin: 0;
+				line-height: 4em;
 	
 		
 		
@@ -298,7 +315,7 @@ blanco= #fff;
 .contenedor-principal
 	width: 100%;
 	background: #fff;
-	top: -22px
+	top: -202px
 	position: relative;
 	padding-top: 34em;
 	text-align: center;
@@ -498,19 +515,30 @@ blanco= #fff;
 
 
 @media screen and (max-width:1430px)
+	.contenedor-solapa
+		top 430px	
 	.seccion-beneficios
 		.beneficios-container
 			nav
 				li
 					p
 						font-size 1em	
-		
+@media screen and (max-width:1320px)
+	.contenedor-solapa
+		top 320px
+		20em			
+@media screen and (max-width:1280px)
+	.contenedor-principal
+		padding-top: 20em;
+				
 @media screen and (max-width:1097px)
+	.contenedor-principal
+		padding-top: 14em;
 	.contenedor-solapa
 		width: 100%;
 		border none
 		box-shadow none
-		top 308px
+		top 154px
 	.header-principal .header-wrap
 		width 100%
 	.seccion-beneficios
@@ -544,17 +572,35 @@ blanco= #fff;
 	.contenedor-solapa
 		top 200px
 		padding-top 1em
+		padding-bottom 3em
 @media screen and (max-width:660px)
 	.menu
 		display none !important
+
 	
 	
 				
 		
 @media screen and (max-width:470px)
+	.contenedor-video
+		width: 100%;
+		background-position: 68% 20%;
+		background-size: cover;
+		height 532px
+		
+	.contenedor-mensaje 
+		.boton-estudios
+			width: 200px;
+			font-size 1em
+			
 	.seccion-testimonios 
 		.testimonio
 			width 85%
+			font-size: 1.2em;
+	.boton-estudios
+		width: 200px;
+		font-size: 1em;
+		
 	.contenedor-solapa
 		width 95%
 	.producto
@@ -562,6 +608,21 @@ blanco= #fff;
 		
 		figure
 			float none
+			img
+				width 130px
+	.producto 
+		.producto-cabecera
+			font-size 1em
+	
+	.titulo
+		font-size 1.2em
+		
+	.frase-1
+		font-size: 1.5em;
+	.seccion-natural 
+		.descripcion 
+			h2
+				font-size larger
 	.seccion-beneficios
 		padding 0
 		.beneficios-container
@@ -580,6 +641,11 @@ blanco= #fff;
 					img
 						width: 49px;
 						display: inline-block;
+	.seccion-natural 
+		.descripcion 
+			.boton-estudios
+				width: 200px;
+				
 						
 			
 	
