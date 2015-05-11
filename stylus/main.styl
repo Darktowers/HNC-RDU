@@ -64,6 +64,64 @@ blanco= #fff;
 		background rojo
 		color blanco
 		border: 2px solid rojo;
+.contactanos
+	.botoncompra
+		margin-top: 1em;
+		background none
+		color azul
+		border 2px solid azul
+		text-shadow: 0 -1px 0 rgba(0,0,0,0.25);
+		/* background-color: #ff241b; */
+		
+		padding: 9px 40px;
+		font-size: 1.5em;
+		-webkit-border-radius: 4px;
+		-moz-border-radius: 4px;
+		-webkit-border-radius: 4px;
+		border-radius: 4px;
+		line-height: normal;
+		-o-transition: all 300ms ease-in-out;
+		-ms-transition: all 300ms ease-in-out;
+		-moz-transition: all 300ms ease-in-out;
+		-webkit-transition: all 300ms ease-in-out;
+		transition: all 300ms ease-in-out;
+		display: inline-block;
+		width: 190px;
+		cursor pointer
+		&:hover
+			background rojo
+			color blanco
+			border: 2px solid rojo;	
+	::-webkit-input-placeholder { color: azul; } /* WebKit */
+	:-moz-placeholder { color: azul; } /* Firefox 18- */
+	::-moz-placeholder { color: azul; } /* Firefox 19+ */
+	:-ms-input-placeholder { color: azul; } /* IE 10+ */
+	input[type=text]
+	input[type=email]
+		padding: 0.5em 0.5em;
+		border: none;
+		border-bottom: 1px solid azul;
+		outline none
+		transition all 0.4s ease-in-out
+		color azul
+		&:focus
+			border-bottom: 1px solid rojo;
+			color rojo
+	textarea
+		padding: 1em;
+		width: 91%;
+		margin-top: 1em;
+		border: 1px solid azul;
+		outline none
+		transition all 0.4s ease-in-out
+		resize none
+		color azul
+		&:focus
+			border: 1px solid rojo;
+			color rojo
+				
+	
+	
 .contenedor-mensaje
 	text-align center
 	position: relative;

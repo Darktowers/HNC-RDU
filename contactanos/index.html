@@ -1,0 +1,187 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+	<meta charset="UTF-8">
+	<title>Comprar Parche anticelulitico | Rdu21</title>
+	<meta name="description" content="Compra el parche anticelulitico con estudios clínicos comprobados resultados visibles en 21 días sin pastillas ni cremas fáciles de usar y muy cómodos tonifica tus gluteos y piernas">
+	<meta name="viewport" content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+	<link rel="stylesheet" href="../css/main.css">
+    <link href='http://fonts.googleapis.com/css?family=Lato:100italic,100,300italic,300,400,700,400italic' rel='stylesheet' type='text/css'> 
+    <!-- Important Owl stylesheet -->
+    <link rel="stylesheet" href="../css/owl.carousel.css">
+     
+    <!-- Default Theme -->
+    <link rel="stylesheet" href="../css/owl.theme.css">
+</head>
+<body>
+	 <header class="header-principal">
+        <div class="header-wrap">
+            <div class="logo">
+                <img src="../img/logo-rdu21.png" alt="logo-rdu21">
+            </div>
+            <nav class="menu">
+               <ul>
+                    <li><a class="Menu-link-normal" href="../index.html">Home</a></li>
+                    <li><a class="Menu-link" href="../blog">Blog</a></li>
+                    <li><a class="Menu-link current-link-blanco" href="#">Contactanos</a></li>
+                </ul>
+            </nav>
+        </div>
+    </header>
+    <section class="producto-container">
+        <form action="enviar.php" method="post">
+	        <div class="contenedor-producto contactanos">
+	            <header><h1>Contáctanos</h1></header>
+				<p>Para nosotros es un gusto contar con tus sugerencias, <br> preguntas o reclamos, siempre estamos aqui para servirte.</p>
+	            <div>
+	            	<input type="text" placeholder="Nombres" required>
+	            	<input type="text" placeholder="Apellidos" required>		
+	            </div>
+	            <div>
+	            	<input type="email" placeholder="Email" required>
+	            	<input type="text" placeholder="Ciudad" required>
+	            </div>
+	            <div>
+	            	<input type="text" placeholder="Telefono" required>
+	            	<input type="text" placeholder="Celular" required>
+	            </div>
+	            <div>
+	            	<input type="text" placeholder="Asunto" style="width: 70%;" required>
+	            </div>
+	            <textarea rows="5" name="message" placeholder="Mensaje" style="height:200px" required></textarea>
+			<button id="BotonEnviar" class="botoncompra" value="submit" type="submit">Enviar
+                        </button>	
+	       	</div>
+       	</form>
+    </section>
+
+        <section class="Mapa">
+
+           <article class="contacto">
+                <div class="contacto-container">
+                    <h2 class="azul">Contactanos</h2>
+                    <div class="direccion"><h3> <span class="icon-location2"></span>Carrera 19A # 116-19</h3></div>
+                    <div class="telefonos"><h3><span class="icon-phone"></span>2149086 - 2149106</h3></div>
+                    <div class="mail"> <h3><span class="icon-mail2"></span>info@rdu21.com</h3></div>
+                    <div class="social">
+                        <span class="icon-facebook2"></span>
+                        <span class="icon-twitter2"></span>
+                        <span class="icon-youtube3"></span>
+                    </div>
+                </div>
+            </article>
+
+
+            <iframe class="map" src="https://www.google.com/maps/d/embed?mid=z0jwFso-iSNg.kwyxJDpfQx6s" width="100%" height="480"></iframe>
+            
+        </section>
+        <footer>
+            <div class="contenedor-footer">
+                <nav class="menu-foot">
+                    <h3>Rdu21.com</h3>
+                    <li><a href="../index.html">Inicio</a></li>
+                    <li><a href="../index.html#estudios">Estudios clinicos</a></li>
+                    <li><a href="../index.html#beneficios">Beneficios</a></li>
+                    <li><a href="../index.html#testimonios">Testimonios</a></li>
+                    <li><a href="index.html">Contactanos</a></li>
+                </nav>
+                 <nav class="menu-foot">
+                    <h3>Producto</h3>
+                    <li><a href="../index.html#comprar">Compra Rdu21</a></li>
+                    <li><a href="">Mujer Bella</a></li>
+                    <li>Formas de pago</li>
+                    <img src="../img/creditcard.png" alt="">    
+                    
+                </nav>
+                 <nav class="menu-foot">
+                    <h3>Siguenos en</h3>
+                    <li><a href="">Facebook</a></li>
+                    <li><a href="">Twitter</a></li>
+                    <li><a href="">Youtube</a></li>
+                    
+                </nav>
+            </div>
+        </footer>
+   
+</body>
+<script src="../js/vendor/jquery-1.9.1.min.js"></script>
+<script src="../js/parallax.min.js"></script>
+<script src="../js/main.js"></script>
+<script type="text/javascript" src="../js/jquery.number.js"></script>
+<script type="text/javascript">
+
+$(document).ready(function(){
+
+ $("#faq").removeClass("current-tab");
+        $("#mododeuso").removeClass("current-tab");
+        $("#detalles").addClass("current-tab");
+        $("#detalles-tab").show();
+        $("#mododeuso-tab").hide();
+        $("#faq-tab").hide();
+
+   $("#detalles").on("click",function(){
+        $("#faq").removeClass("current-tab");
+        $("#mododeuso").removeClass("current-tab");
+        $("#detalles").addClass("current-tab");
+        $("#detalles-tab").show();
+        $("#mododeuso-tab").hide();
+        $("#faq-tab").hide();
+   });
+   $("#mododeuso").on("click",function(){
+        $("#faq").removeClass("current-tab");
+        $("#mododeuso").addClass("current-tab");
+        $("#detalles").removeClass("current-tab");
+        $("#detalles-tab").hide();
+        $("#mododeuso-tab").show();
+        $("#faq-tab").hide();
+   });
+    $("#faq").on("click",function(){
+        $("#faq").addClass("current-tab");
+        $("#mododeuso").removeClass("current-tab");
+        $("#detalles").removeClass("current-tab");
+        $("#detalles-tab").hide();
+        $("#mododeuso-tab").hide();
+        $("#faq-tab").show();
+   });
+
+  var fecha = new Date();
+  var agno= fecha.getFullYear().toString(10).substring(2, 4);
+  var mes = fecha.getMonth();
+  var dia= fecha.getDate();
+  var hora= fecha.getHours();
+  var minutos = fecha.getMinutes();
+  var milisegundos = fecha.getMilliseconds();
+  
+  var referencia = ""+agno+mes+dia+hora+minutos+milisegundos;
+    $("#freferencia").val(referencia);  
+    $("#fmonto").val($("#selcantidad").val()*62800);
+    $("#fvalor").val($("#selcantidad").val()*62800);
+    $("#fiva").val($("#fvalor").val()*0.16);
+    $("#fcantidad").val($("#selcantidad").val());
+    $("#precio3").text($("#selcantidad").val()*62800);
+    $('#precio3').number( true, 0 , ',', '.');
+
+
+    $("#selcantidad").change(function(){
+        var fecha = new Date();
+        var agno= fecha.getFullYear().toString(10).substring(2, 4);
+        var mes = fecha.getMonth();
+        var dia= fecha.getDate();
+        var hora= fecha.getHours();
+        var minutos = fecha.getMinutes();
+        var milisegundos = fecha.getMilliseconds();
+        var referencia = ""+agno+mes+dia+hora+minutos+milisegundos;
+        $("#freferencia").val(referencia);  
+        $("#fmonto").val($("#selcantidad").val()*62800);
+        $("#fvalor").val($("#selcantidad").val()*62800);
+        $("#fiva").val($("#fvalor").val()*0.16);
+        $("#fcantidad").val($("#selcantidad").val());
+        $("#precio3").text($("#selcantidad").val()*62800);
+        $('#precio3').number( true, 0 , ',', '.');
+    });
+
+
+});
+
+</script>
+</html>
