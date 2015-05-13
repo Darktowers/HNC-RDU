@@ -1,0 +1,327 @@
+@import "normalize.styl"
+@import "nib"
+@import "nib/vendor"
+
+
+vendor-prefixes = o ms moz webkit official
+azul = #3f90dc
+rojo = rgb(230, 69, 42)
+verde = #149152
+amarillo = #FF8E1B
+negro = rgb(15, 33, 5);
+blanco= #fff;
+.float-left
+	float left
+.float-right
+	float right
+.align-center
+	text-align center
+.blanco
+	color blanco
+.azul
+	color azul
+body
+	padding-top 72px
+	text-rendering: optimizeLegibility;
+.header-principal
+	color blanco
+	width 100%
+	height 80px
+	text-align center
+	position fixed
+	top 0
+	z-index 2
+	background: azul
+	.header-wrap
+		display: inline-block;
+		position: relative;
+		overflow: hidden;
+		width: 1010px;
+		height: 75px;
+		overflow: hidden;
+		
+		.logo
+			position absolute
+			left 0
+			display inline-block
+			padding: 1em 0 0 1em;
+			img
+				width 120px
+		.menu
+			position: absolute;
+			text-align: right;
+			display: inline-block;
+			right: 0;
+			padding: 1em 1em 0 0;
+			ul
+				list-style: none;
+				margin: 0;
+				padding: 0;
+				li
+					display: inline-block;
+					margin: 0;
+					a
+						font-size: .9em;
+						color: blanco
+						display: block;
+						margin: 0.5em 1em;
+						text-decoration: none;
+						transition: 0.3s;
+						font-weight: bold;
+						text-transform: uppercase;
+						padding: 5px 0;
+						:hover
+							cursor pointer
+			.current-link
+				border-bottom: 2px solid azul;
+				opacity: .9;
+			.current-link-blanco
+				border-bottom: 2px solid blanco;
+				opacity: .9;
+			.blog
+				border-bottom: 2px solid #FF9200;
+				opacity: .9;
+.wrap-l
+	max-width 1000px !important
+.wrap
+	max-width 800px
+	margin 0 auto
+	padding: 0 0.5em;
+	.article-title
+		border-bottom: 0 none;
+		bottom: .9em;
+		color: #fff;
+		font-size: 3em;
+		margin: 0 auto;
+		max-width: 800px;
+		position: absolute;
+		text-shadow: rgba(0,0,0,0.8) 0 1px 1px;
+		text-rendering: auto;
+		-webkit-font-smoothing: auto;
+		text-align: left;
+	a
+		text-decoration: none;
+	.post
+		padding (1/2)em
+		color negro
+		background blanco
+		text-align left
+		max-width: 350px;
+		width: 95%;
+		display inline-block
+		figure
+			margin 0
+			img
+				width: 100%;
+				height: 214px;
+		.post-header
+			.post-titulo
+				border-bottom: 1px solid #b7b7b7;
+				color: #515151;
+				font-size: 1.4em;
+				font-weight: normal;
+				margin: 0;
+				padding: .455em 0 .909em;
+				text-decoration: none;
+		.post-footer
+			.post-autor
+				font-weight 300
+				margin: .714em 0;
+				display inline-block
+			.author-img
+				img
+					width 100px
+			.post-date
+				display inline-block
+				font-weight 300
+				margin: .714em 0;
+				float right
+.wrap-single
+	.article
+		.article-img
+			height: auto;
+			max-height: 600px;
+			min-height: 250px;
+			opacity: .8;
+			margin 0
+			overflow: hidden;
+			img
+				height: auto;
+				min-height: 100%;
+				width: 100%;
+		.article-header
+			background-color: #191919;
+			position: relative;
+		.content
+			max-width 800px
+			margin 0 auto
+			padding: 0 0.5em;
+			.article-footer
+				border-top: 1px solid #b7b7b7;
+				margin-top: 1em;
+				overflow: hidden;
+				padding: 1em 0;
+				.author-img
+					margin: 0;
+					display: inline-block;
+					position: relative;
+					/* margin-top: 1em; */
+					top: 0.5em;
+					margin-right: 0.5em;
+				
+						
+				.article-autor
+					display inline-block
+				.article-date
+					display: inline-block;
+					float: right;
+					margin: 1em 0 1em 0;
+		.post-content
+			color: #515151;
+			font-family: 'Crimson Text',serif;
+			font-size: 1.4em;
+		
+				
+@media screen and (max-width:1097px)
+	.contenedor-principal
+		padding-top: 14em;
+	.contenedor-solapa
+		width: 100%;
+		border none
+		box-shadow none
+		top 154px
+	.header-principal .header-wrap
+		width 100%
+	.seccion-beneficios
+		padding 0
+		.beneficios-container
+			padding 0
+			nav
+				width 100%
+				text-align center
+				li
+					p
+						font-size 1em
+						
+@media screen and (max-width:660px)
+	.menu
+		display none !important
+		
+@media screen and (min-width:640px)	
+	.wrap
+		.post
+			text-align: left;
+			width 44%
+			display: inline-block;
+			margin: 0 2% 1em 0;
+			overflow: hidden;
+			vertical-align: top;
+@media screen and (min-width:640px)	
+	.wrap
+		.post
+			text-align: left;
+			width 44%
+			display: inline-block;
+			margin: 0 2% 1em 0;
+			overflow: hidden;
+			vertical-align: top;
+			
+@media screen and (max-width:640px)	
+	.wrap
+		.article-title
+			font-size 2em
+	.content
+		.article-footer
+			padding 0		
+
+	
+	
+					
+@media screen and (min-width:1024px)	
+	.wrap
+		padding 0
+		text-align left
+		.post
+			display: inline-block;
+			margin: 0 2% 1em 0;
+			overflow: hidden;
+			vertical-align: top;
+			width: 29.7%;
+		.post:nth-child(3n)
+			margin-right: 0;
+@media screen and (max-width:1024px)	
+	
+	.wrap-single
+		.article
+			.article-img
+				max-height: 450px;
+	
+
+
+
+
+
+
+
+
+@media screen and (max-width: 750px)
+	.wrap-single
+		.article
+			.article-img
+				max-height: 400px !important;
+
+@media screen and (max-width: 640px)
+	.wrap-single
+		.article
+			.article-img
+				max-height: 350px !important;
+@media screen and (max-width: 420px)
+	.wrap-single
+		.article
+			.article-img
+				max-height: 220px !important;
+				min-height: 100px !important;
+	.wrap
+		.article-title			
+			font-size: 1.5em;
+
+@media screen and (max-width: 350px)
+	.wrap-single
+		.article
+			.article-img 
+				max-height: 200px !important;
+
+				
+
+
+
+				
+
+
+		
+	
+		
+		
+			
+
+			
+
+		
+
+	
+						
+			
+	
+		
+	
+
+		
+			
+			
+
+		
+		
+		
+			
+	
+
