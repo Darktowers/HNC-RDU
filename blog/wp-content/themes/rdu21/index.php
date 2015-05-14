@@ -3,7 +3,7 @@
 	 
     <div class="wrap wrap-l">
 		<?php rewind_posts(); ?>
-		<?php query_posts(); ?>
+		<?php query_posts( $query_string.'posts_per_page=10'); ?>
 		<?php if ( have_posts() ) : while ( have_posts() ) : the_post(); ?>
 
 		
@@ -30,5 +30,4 @@
 			<h3>No hemos encontrado nada</h3>
 		<?php endif; ?>
 		</div>
-</body>
-</html>
+<?php get_footer(); ?>

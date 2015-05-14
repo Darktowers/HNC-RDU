@@ -1,4 +1,4 @@
-<?php get_header(); ?>
+<?php get_header('post'); ?>
 <body>
 	 
     <div class="wrap-single">
@@ -30,6 +30,7 @@
 		</div>
 		</article>
 
+
 		<!-- post -->
 		<?php endwhile; ?>
 		<!-- post navigation -->
@@ -38,5 +39,8 @@
 			<h3>No hemos encontrado nada</h3>
 		<?php endif; ?>
 		</div>
-</body>
-</html>
+		<section class="comments wrap">
+			<?php comments_template( $file, $separate_comments ); ?>
+		</section>
+		
+<?php get_footer(); ?>
