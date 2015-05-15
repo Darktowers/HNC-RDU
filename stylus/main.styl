@@ -38,6 +38,33 @@ blanco= #fff;
 	font-size 16px	
 
 /* Cabecera */
+.boton-estudios-azul
+			background none
+			color azul
+			border 2px solid azul
+			text-shadow: 0 -1px 0 rgba(0,0,0,0.25);
+			/* background-color: #ff241b; */
+			
+			padding: 9px 40px;
+			font-size: 1.5em;
+			-webkit-border-radius: 4px;
+			-moz-border-radius: 4px;
+			-webkit-border-radius: 4px;
+			border-radius: 4px;
+			line-height: normal;
+			-o-transition: all 300ms ease-in-out;
+			-ms-transition: all 300ms ease-in-out;
+			-moz-transition: all 300ms ease-in-out;
+			-webkit-transition: all 300ms ease-in-out;
+			transition: all 300ms ease-in-out;
+			display: inline-block;
+			width: 300px;
+			
+			cursor pointer
+			&:hover
+				background azul
+				color blanco
+				border: 2px solid azul;
 .boton-estudios
 	background none
 	color rojo
@@ -104,6 +131,7 @@ blanco= #fff;
 		outline none
 		transition all 0.4s ease-in-out
 		color azul
+		width 46%
 		&:focus
 			border-bottom: 1px solid rojo;
 			color rojo
@@ -387,7 +415,7 @@ blanco= #fff;
 	position: relative;
 	padding-top: 34em;
 	text-align: center;
-	border-top: 6px solid azul;
+	
 .seccion-natural
 	background url("../img/background-rdu21.jpg")
 	background-repeat: no-repeat
@@ -397,6 +425,7 @@ blanco= #fff;
 	text-align center
 	background-size: cover;
 	z-index 500
+	border-bottom: 2px solid #fff;
 	/*&:before
 		content ""
 		width: 100%;
@@ -585,7 +614,7 @@ blanco= #fff;
 		background: white;
 		height: 435px;
 		box-shadow: 10px 0px 24px #000;
-		left 8em
+		left 10em
 		.contacto-container
 			margin-top: 87px;
 			position: relative;
@@ -790,6 +819,36 @@ footer
 			position: absolute;
 			z-index: 1;
 			transition all 0.3s ease-in-out
+.contactanos
+	max-width: 530px !important;
+	.separador
+		border-top: 1px solid rgb(63, 144, 220);
+		padding-top: 1em;
+		text-align: justify;
+#preloader
+	position: fixed;
+	top: 0;
+	left: 0;
+	right: 0;
+	width: 100%;
+	height: 100%;
+	bottom: 0;
+	background-color:azul;
+	z-index: 5000;
+	#status 
+		width: 200px;
+		height: 200px;
+		position: absolute;
+		left: 50%;
+		top: 60%;
+		background-repeat: no-repeat;
+		background-position: center;
+		margin: -100px 0 0 -100px;
+		text-align: center;
+		img
+			position: absolute;
+			top: 20px;
+			left: 23px;
 			
 							
 
