@@ -10,7 +10,7 @@ azul = #012839
 rojo = #ff4800
 verde = #149152
 amarillo = #ff4800
-negro = rgb(15, 33, 5);
+negro = #2e2f33
 blanco= #fff;
 .float-left
 	float left
@@ -36,8 +36,11 @@ blanco= #fff;
 
 	
 .body
-	font-size 16px	
+	font-size 16px
+body
+	color negro	
 
+	
 /* Cabecera */
 .boton-estudios-azul
 			background none
@@ -484,7 +487,7 @@ blanco= #fff;
 	background-size: cover;
 	z-index 500
 	border-top: 2px solid azul;
-	border-bottom: 2px solid rgb(207, 4, 155);
+	border-bottom: 2px solid azul;
 	/*&:before
 		content ""
 		width: 100%;
@@ -624,7 +627,7 @@ blanco= #fff;
 				h3
 					margin: 0;
 					padding: 1em 0 1em 0;
-					border-bottom: 4px solid #3f90dc;
+					border-bottom: 4px solid azul;
 					text-align: left;
 				span
 					margin-right: 18px;
@@ -706,7 +709,7 @@ footer
 		.producto-imagen
 			margin: 0;
 			float: left;
-			border-right: 1px solid #3F90DC;
+			border-right: 1px solid azul;
 			margin-right: 2em;
 			
 		.carrito
@@ -823,7 +826,7 @@ footer
 .contactanos
 	max-width: 530px !important;
 	.separador
-		border-top: 1px solid rgb(63, 144, 220);
+		border-top: 1px solid azul;
 		padding-top: 1em;
 		text-align: justify;
 #preloader
@@ -931,7 +934,7 @@ footer
 					h3
 						margin: 0;
 						padding: 1em 0 1em 0;
-						border-bottom: 4px solid #3f90dc;
+						border-bottom: 4px solid azul;
 						display: inline-block;
 					span
 						margin-right: 18px;
@@ -960,7 +963,8 @@ footer
 @media screen and (max-width:660px)
 	.menu
 		display none !important
-
+	.parallax-slider
+		left -50px !important
 	
 	
 				

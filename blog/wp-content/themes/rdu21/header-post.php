@@ -18,9 +18,9 @@
               <ul>
                     <li><a class="Menu-link-normal " href="../index.html">Home</a></li>
                     <li><a class="Menu-link" href="../index.html#comprar">Producto</a></li>
-                    <li><a class="Menu-link" href="#">Mujer Bella</a></li>
+                    <li><a class="Menu-link" href="#">Nuestra Marca</a></li>
                     <li><a class="Menu-link current-link-blanco" href="/blog">Blog</a></li>
-                    <li><a class="Menu-link-normal" href="../../contactanos/index.html">Contactanos</a></li>
+                    <li><a class="Menu-link-normal" href="../../contactanos/index.html">Contáctanos</a></li>
                 </ul>
             </nav>
         </div>

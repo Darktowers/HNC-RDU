@@ -14,7 +14,7 @@
 	 <header class="header-principal">
         <div class="header-wrap">
             <div class="logo">
-                  <a href="../index.html"><img src="../img/logo-rdu21.png" alt="logo-rdu21"></a>
+                  <a href="../index.html"><img src="../img/102logo.png" alt="logo-rdu21"></a>
             </div>
             <nav class="menu">
                <ul>
@@ -71,7 +71,17 @@
 
 
 
-
+ <div class="partner" style="border-bottom: 1px solid rgba(180,180,180,0.74);background:white;">
+            <h2 style="padding-top:1em;margin:0;">COMPRA YA EN</h2>
+            <a href="http://www.larebajavirtual.com/catalogo/index/verproducto/producto/RDU-21-PARCHE-REDUCTOR-VIENTRE-PLANO/productoId/21714/divId/" target="_blank"  id="rebaja">
+                <div class="rebaja">
+                    <img src="../img/larebaja.png" alt="larebaja" width="200" height="77">
+                </div>
+            </a>
+            <a href="#" id="softcaps">
+                <div class="softcaps"><img src="../img/softcaps.png" alt="softcaps" width="200" height="77"></div>
+            </a>
+        </div>
 
 
             <!--- Inputs -->
@@ -100,6 +110,7 @@
           
         </form>
     </section>
+
     <section class="contenedor-seguro">
         <div class="seguro">
             <span class="gray">
@@ -212,6 +223,10 @@ Notificación Sanitaria NSOC51545-12CO
 <script type="text/javascript">
 
 $(document).ready(function(){
+      $(".carrito").hide(); 
+       $("#softcaps").on("click",function(){
+             $(".carrito").show("slow");
+       });
 
  $("#faq").removeClass("current-tab");
         $("#mododeuso").removeClass("current-tab");
