@@ -7,7 +7,7 @@
     <head>
         <meta charset="utf-8">
         <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
-        <title>Bajar de peso sin pastillas para adelgazar | Rdu21 </title>
+        <title>baja de peso sin pastillas ni cremas luce tu figura | Rdu21 </title>
         <meta name="description" content="Baja de peso sin pastillas para adelgazar ni cremas Rdu21 es la nueva tecnología de parches con estudios clínicos comprobados 100% natural luce tu figura">
         <meta name="viewport" content="width=device-width, minimum-scale=1, maximum-scale=1"/>
          <link rel="shortcut icon" href="favicon.ico" type="image/x-icon">
@@ -28,13 +28,20 @@
             <div class="logo">
                 <a href="index.html"><img width="120" src="img/102logo.png" alt="logo-rdu21"></a>
             </div>
+            <span class="menu-movil">
+                <span class="col"></span>
+                <span class="col"></span>
+                <span class="col"></span>
+            </span>
             <nav class="menu">
+                 <div class="cerrar"></div> 
               <ul>
+
                     <li><a class="Menu-link-normal current-link-blanco" href="index.html">Home</a></li>
                     <li><a class="Menu-link" href=".contenedor-solapa">Producto</a></li>
-                    <li><a class="-" href="nuestra-marca/index.html">Nuestra Marca</a></li>
+                    <li><a class="-" href="nuestra-marca/">Nuestra Marca</a></li>
                     <li><a class="" href="http://www.rdu21.com/blog">Blog</a></li>
-                    <li><a class="Menu-link-normal" href="contactanos/index.html">Contáctanos</a></li>
+                    <li><a class="Menu-link-normal" href="contactanos/">Contáctanos</a></li>
                 </ul>
             </nav>
         </div>
@@ -64,7 +71,7 @@
     </div>
     <div class="contenedor-solapa contenedor" id="comprar">
         <h2 class="producto-titulo" style="font-family: FuturaPT-CondBook;">COMPRA YA </h2>
-    <a href="comprar-rdu21-parche-vientre-plano/index.html">
+    <a href="comprar-rdu21-parche-vientre-plano/">
         <article class="producto" style="font-family: FuturaPT-CondBook;">
             <h3 class="producto-cabecera">Parche Vientre plano</h3>
             <div class="producto-descripcion">
@@ -81,13 +88,12 @@
                 <li><img src="img/blue-check-mark.png" alt=""><p>Sin pastillas ni cremas</p></li>
             </nav>
              <p>Beneficios visibles en <strong>21 dias</strong></p>    
-            <div class="precio"><span class="icon-price-tags price-icon"></span>68.200</div>
-            <p class="antes">Antes:</p>
-            <div class="precio-antes">75.000</div>
+            <div class="precio"><span class="icon-price-tags price-icon"></span>78.500</div>
+           
             <button class="boton-comprar">Comprar ahora</button>
         </article>
         </a>
-        <a href="coprar-rdu21-parche-anticelulitico/index.html">
+        <a href="comprar-rdu21-parche-anticelulitico/">
         <article class="producto" style="font-family: FuturaPT-CondBook;">
             <h3 class="producto-cabecera">Parche Anticelulítico</h3>
             <div class="producto-descripcion">
@@ -103,9 +109,8 @@
                 </nav>    
              <p>Beneficios visibles en <strong>21 dias</strong></p> 
            
-            <div class="precio"><span class="icon-price-tags price-icon"></span>68.200</div>
-            <p class="antes">Antes:</p>
-            <div class="precio-antes">75.000</div>
+            <div class="precio"><span class="icon-price-tags price-icon"></span>78.500</div>
+          
             <button class="boton-comprar">Comprar ahora</button>
         </article>
         </a>
@@ -249,7 +254,7 @@ left: 1px;"></h2>
                     <li><a  class="Menu-link"href=".seccion-natural">Estudios clínicos</a></li>
                     <li><a  class="Menu-link" href=".seccion-beneficios">Beneficios</a></li>
                     <li><a  class="Menu-link" href="#testimonios">Testimonios</a></li>
-                    <li><a  href="contactanos/index.html">Contáctanos</a></li>
+                    <li><a  href="contactanos/">Contáctanos</a></li>
                 </nav>
                  <nav class="menu-foot">
                     <h3>Producto</h3>
@@ -280,6 +285,17 @@ left: 1px;"></h2>
  
     </body>
     <script>
+       $(".menu-movil").on("click",function(){
+
+         $(".menu").show("basic");   
+         
+    });
+          $(".cerrar").on("click",function(){
+
+         $(".menu").hide("basic"); 
+         console.log("Hola click");  
+         
+    });
     /*
   (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
   (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),

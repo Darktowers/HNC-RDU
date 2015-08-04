@@ -14,3 +14,41 @@ ExpiresByType image/x-icon "access 1 year"
 ExpiresDefault "access plus 1 month"
 </IfModule>
 ## EXPIRES CACHING ##
+Redirect 301 /productos http://www.rdu21.com/
+Redirect 301 /calculadoras/bmi-calculadora http://www.rdu21.com/
+Redirect 301 /calculadoras/calculadora-de-calorias-diarias http://www.rdu21.com/
+Redirect 301 /calculadoras/calorias-quemadas-por-actividades http://www.rdu21.com/
+Redirect 301 /index.php/productos http://www.rdu21.com/
+Redirect 301 /productos/comprar/parche-anticelulitico http://www.rdu21.com/comprar-rdu21-parche-anticelulitico/
+Redirect 301 /productos/comprar/parche-reductor http://www.rdu21.com/comprar-rdu21-parche-vientre-plano/
+Redirect 301 /productos/detalles/parche-anticelulitico http://www.rdu21.com/comprar-rdu21-parche-anticelulitico/
+Redirect 301 /productos/detalles/parche-reductor http://www.rdu21.com/comprar-rdu21-parche-vientre-plano/
+Redirect 301 /detalles/parche-reductor http://www.rdu21.com/comprar-rdu21-parche-vientre-plano/
+Redirect 301 /detalles/parche-anticelulitico http://www.rdu21.com/comprar-rdu21-parche-anticelulitico/
+Redirect 301 /comprar/parche-reductor http://www.rdu21.com/comprar-rdu21-parche-vientre-plano/
+Redirect 301 /comprar/parche-anticelulitico http://www.rdu21.com/comprar-rdu21-parche-anticelulitico/
+Redirect 301 /.seccion-natural http://www.rdu21.com/
+Redirect 301 /.contenedor-solapa http://www.rdu21.com/
+Redirect 301 /calculadoras/calculadora-de-calorias-diarias http://www.rdu21.com/
+Redirect 301 /contenidos/detalle/124/lo_que_dice_tu_cuerpo_de_tu_personalidad http://www.rdu21.com/
+Redirect 301 /contenidos/detalle/112/tienes_derecho_a_verte_fabulosa_la_respuesta_es_si http://www.rdu21.com/
+Redirect 301 /contenidos/detalle/148/rdu21_y_ejercicio_para_reducir_medidas http://www.rdu21.com/
+Redirect 301 /contenidos/detalle/142/celulitis_no_importa_el_origen_sino_la_solucion http://www.rdu21.com/
+Redirect 301 /contenidos/detalle/150/no_se_deje_meter_gol http://www.rdu21.com/
+Redirect 301 /contenidos/listado/1/mujer_saludable http://www.rdu21.com/
+Redirect 301 /contenidos/detalle/42/parches_de_accion_profunda http://www.rdu21.com/
+Redirect 301 /contenidos/detalle/131/8_trucos_para_tener_un_vientre_plano http://www.rdu21.com/
+Redirect 301 /contenidos/detalle/56/se_puede_ser_feliz_aun_y_con_las_redes_sociales http://www.rdu21.com/
+Redirect 301 /contenidos/detalle/83/el_metodo_pilates_te_ayuda_a_adelgazar http://www.rdu21.com/
+Redirect 301 /contenidos/detalle/96/una_navidad_dulce_feliz_y_saludable http://www.rdu21.com/
+Redirect 301 /contenidos/detalle/61/luce_fantastica_y_seductora_en_amor_y_amistad http://www.rdu21.com/
+Redirect 301 /contenidos/detalle/98/obesidad_y_sobrepeso_aumentan_en_colombia http://www.rdu21.com/
+Redirect 301 /contenidos/detalle/144/las_5_peores_dietas_que_jamas_deberias_de_hacer http://www.rdu21.com/
+Redirect 301 /contenidos/detalle/115/hombres_y_mujeres_adelgazan_de_forma_diferente http://www.rdu21.com/
+Redirect 301 /contenidos/detalle/134/rdu21_dos_productos_un_mismo_objetivo http://www.rdu21.com/
+Redirect 301 /flash_video.php?vv=www.youtube.com/embed/_ffZ2n7kgJA?rel=0 http://www.rdu21.com/
+Redirect 301 /contenidos/detalle/145/rdu21_y_te_verde_aliados_en_la_reduccion_de_medidas http://www.rdu21.com/
+Redirect 301 /index.php/contenidos/detalle/80/pierdo_peso_gano_confianza http://www.rdu21.com/
+Redirect 301 /index.php/contenidos/detalle/100/el_apoyo_de_la_familia_en_la_lucha_contra_el_sobrepeso http://www.rdu21.com/
+Redirect 301 /videos http://www.rdu21.com/
+	

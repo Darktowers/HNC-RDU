@@ -39,6 +39,8 @@ blanco= #fff;
 	font-size 16px
 body
 	color negro	
+.menu-movil
+	display none	
 
 	
 /* Cabecera */
@@ -957,12 +959,60 @@ footer
 		.content-tab 
 			article
 				width 100%	
-
+	.menu-movil
+		display: inline-block;
+		position: relative;
+		color: #012336;
+		float: right;
+		padding: 1em 1em 0 0;
+		cursor pointer
+		transition all 0.5s ease-in-out
+		.col
+			height: 3px;
+			width: 26px;
+			margin-bottom: 7px;
+			background-color: #012336;
+			display: block;
+	.header-principal
+		.header-wrap
+			
+				
+			.menu
+				position: fixed;
+				text-align: center;
+				display: inline-block;
+				right: 0;
+				padding: 0;
+				background: #fff;
+				width: 100%;
+				height: 100%;
+				display none
+				transition all 1s ease-in-out
+				ul
+					top: 30%;
+					position: relative;
+					li
+						display block
+						margin 0
+						a
+							margin: 0;
+							padding: 1em;
+				.cerrar
+					transition all 1s ease-in-out
+					background: url("../img/cerrar.png");
+					width: 23px;
+					/* background-size: 100% 100%; */
+					background-repeat: no-repeat;
+					height: 23px;
+					/* float: left; */
+					position: absolute;
+					right: 0;
+					margin: 1em 1em 0 0;
+					cursor: pointer;
 		
 		
 @media screen and (max-width:660px)
-	.menu
-		display none !important
+		
 	.parallax-slider
 		left -50px !important
 	
